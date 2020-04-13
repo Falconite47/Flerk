@@ -2,6 +2,13 @@
     @media (max-width: 768px) {@content;}
 }
 
+@mixin six {
+    @media (max-width: 640px) {
+        @content;
+    }
+}
+
+
 $blue : linear-gradient(90deg, #0087f6, #0059ff);
 
 *{
@@ -56,6 +63,12 @@ body {
             a {
                 text-decoration: none;
                 color: white;
+                transition: 0.25s ease-in-out;
+
+                &:hover {
+                    color: #0087f6;
+                }
+
             }
 
         }
@@ -86,22 +99,38 @@ body {
             font-family:"Poppins bold", sans-serif;
             text-transform: uppercase;
             padding-bottom: 0.5rem;
+
+            @include six {
+                font-size: 2rem;
+            }
+
         }
 
         .par {
             font-family: "Poppins",sans-serif;
             font-size: 1rem;
             padding-bottom: 1.5rem;
+
+             @include six {
+                 font-size: 0.8rem;
+             }
         }
     
         .buttons {
-            
+
             .hero-btn {
                 background: $blue;
                 text-decoration: none;
                 color: white;
                 padding: 0.5rem 2rem;
                 margin: 0 0.5rem;
+
+                 @include six {
+                     display: block;
+                     margim-bottom: 0.5rem;
+                     padding: 0.8rem 2rem;
+                 }
+
             }
 
             .hero-btn-contact {
@@ -111,6 +140,12 @@ body {
                  border: 1px solid white;
                  padding: 0.5rem 2rem;
                  margin: 0 0.5rem;
+
+                  @include six {
+                      margin-top: 0.8rem;
+                      padding: 0.8rem 2rem;
+                      display: block;
+                  }
             }
 
         }
