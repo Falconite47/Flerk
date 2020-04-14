@@ -368,19 +368,17 @@ body {
 }
 
 .services .box #collapsible:checked ~ .com {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  opacity: 1;
-  position: relative;
+  max-height: 150px;
+  padding: 2rem 1rem;
+  overflow: hidden;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
 
 .services .box #collapsible-2:checked ~ .com-2 {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  opacity: 1;
-  position: relative;
+  max-height: 150px;
+  padding: 2rem 1rem;
+  overflow: hidden;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
@@ -430,15 +428,14 @@ body {
 }
 
 .services .box .com, .services .box .com-2 {
-  padding: 1rem 0;
-  -webkit-transform: translateY(-5%);
-          transform: translateY(-5%);
-  opacity: 0;
+  padding: 0 1rem;
   z-index: -1;
-  position: absolute;
+  max-height: 0;
+  overflow: hidden;
   font-size: 1rem;
   font-weight: 400;
-  padding: 2rem 1rem;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
   background: #2f2f2f;
 }
 
