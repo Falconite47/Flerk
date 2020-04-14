@@ -98,28 +98,33 @@ body {
 
 @media (max-width: 640px) {
   .hero .box {
-    padding: 0 5px;
+    padding: 0 10px;
   }
 }
 
 .hero .box .title {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  padding-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero .box .title {
+    line-height: 60px;
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 640px) {
   .hero .box .title {
-    padding: 0 4px;
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 }
 
 .hero .box .par {
   font-family: "Poppins",sans-serif;
   font-size: 1rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 @media (max-width: 640px) {
@@ -140,7 +145,7 @@ body {
 @media (max-width: 640px) {
   .hero .box .buttons .hero-btn {
     display: block;
-    margim-bottom: 0.5rem;
+    margin: 0.5rem 0;
     padding: 0.8rem 2rem;
   }
 }
@@ -156,7 +161,7 @@ body {
 
 @media (max-width: 640px) {
   .hero .box .buttons .hero-btn-contact {
-    margin-top: 0.8rem;
+    margin: 0.5rem 0;
     padding: 0.8rem 2rem;
     display: block;
   }
@@ -329,6 +334,13 @@ body {
   position: relative;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
+}
+
+@media (max-width: 640px) {
+  .services .box label {
+    font-size: 1.3rem;
+    text-align: left;
+  }
 }
 
 .services .box label .tri {
